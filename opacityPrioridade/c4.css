@@ -1,0 +1,58 @@
+
+/* Ordem de importância para o CSS
+1 style no HTML
+2 #div - a div
+3 h1.class - tag + a classe
+4 .class - somente a classe
+5 h1 - último a tag
+obs: se usar ! important essa será a prioridade.*/
+.img1:hover{
+    opacity: 0.9;
+}
+
+.img2{
+    opacity: 0.7;
+}
+
+.img3{
+    opacity: 0.3;
+}
+ul{
+    background: black;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+
+}
+li a, .dropbtn{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+}
+li a:hover, .dropdown:hover .dropbtn{
+    background: red;
+}
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: white;
+    width: 50px;
+}
+.dropdown-content a{
+    color: black;
+
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    background: blue;
+    width: 62px;
+}

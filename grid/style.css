@@ -1,0 +1,59 @@
+           /* *Grid Container
+  *display
+grid-template-columns
+grid-template-rows
+grid-template-areas
+grid-template
+gap
+grid-auto-columns
+grid-auto-rows
+grid-auto-flow
+grid
+justify-content
+align-content
+justify-items
+align-items
+                
+              *Grid Item 
+ grid-column
+ grid-row
+ grid-area
+ justify-self
+ align-self */
+.grid{
+  display: grid;
+  height: 600px;
+  border: 1px solid black;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px 50px;
+  margin: 1%;
+}
+.grid .item{
+  background: red;
+}
+.item1{
+  grid-column: 1 / 3;
+  grid-row: 1 /  3;
+ 
+}
+.item2{
+
+}
+.item3{
+
+}
+.item4{
+}
+.item5{
+
+}
+.item6{
+  
+}
+.item7{
+
+}
+.item8{
+
+}

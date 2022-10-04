@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+    
+}
+.flex-pai{
+    background: blue;
+    display: flex;
+    flex-direction: row; /* flex-flow: row wrap atalho para o flex- direction e o flex-wrap*/
+    flex-wrap: wrap;
+    justify-content:flex-start ; /*alinhamento horizontal*/
+    align-items: flex-end; /*alinhamento vertical*/
+    min-height: 800px;
+   align-content: center; /* pega todos os itens*/
+}
+.flex-pai div {
+    flex-grow: 1; /* flex-grow divide os itens em tamanhos iguais dentro da div pai*/
+    background: white;
+    border: 1px solid black;
+    padding: 30px;
+    text-align: center;
+    
+}

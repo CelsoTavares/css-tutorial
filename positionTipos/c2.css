@@ -1,0 +1,53 @@
+
+.ex1{
+    border: 1px solid red;
+    max-width: 800px;
+}
+.ex2{
+    border: 1px solid blue;
+    max-width: 800px; /*tela fica responsiva*/
+}
+.container{
+    position: relative;
+    background: blue;
+    width: 100%;
+    height: 400px;
+}
+.div1{
+    position: relative; /*z-index: (número de prioridade) necessário as outras div ter também position relative*/
+    left: 100px;
+    width: 30%;
+    height: 100px;
+    background: yellow;
+    display: inline-block;
+    text-align: center; 
+}
+.div2{
+     /*deslocamento em relação ao elemento pai, O pai tem que ter alguma position definida para funcionar*/
+    top: 100px;
+    right: 450px;
+    position: absolute;
+    width: 30%;
+    height: 100px;
+    background: green;
+    display: inline-block;
+    text-align: center;
+    
+}
+.div3{
+    position: sticky; /*ao atingir colar na imagem, fica dentro do elemento pai*/
+    top: 0;
+    width: 30%;
+    height: 100px; 
+    background: red;
+    display: inline-block;
+    text-align: center;
+}
+.fixed{
+    position: fixed; /* fixo, sempre fica em um ponto da tela, aparecendo na tela */
+    background: pink;
+    width: 80px;
+    height: 80px;
+    bottom: 10px;
+    right: 10px;
+}

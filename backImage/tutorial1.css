@@ -1,0 +1,21 @@
+@charset "UTF-8"; /* sempre usar aspas duplas*/
+
+/* font: italic bold 16px Arial, Helvetica, sans-serif*/
+
+/* font-family: Arial;
+font-weight: bold;
+font-style: italic;
+font- size: 12px;  */
+
+/* .nome chama a classe 
+#nome chama id  
+padding: top right bottom left obs: se colocar só valor em cima
+e na direita ele vai colocar o mesmo valor no fim e na esquerda */
+
+
+
+body{
+
+color: red;
+background-image: radial-gradient(circle, rgb(223, 26, 26), yellow, rgb(27, 206, 42)); 
+}
