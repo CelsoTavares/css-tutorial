@@ -129,6 +129,18 @@ ex: **flex: 1**;
 ## Animações CSS
 ### CSS permite a animação de elementos HTML sem usar JavaScript ou Flash!
 
+### Você aprenderá sobre as seguintes propriedades:
+
+* @keyframes
+* animation-name
+* animation-duration
+* animation-delay
+* animation-iteration-count
+* animation-direction
+* animation-timing-function
+* animation-fill-mode
+* animation
+
 ### A regra **@keyframes**
 Quando você especifica estilos CSS dentro da @keyframes regra, a animação mudará gradualmente do estilo atual para o novo estilo em determinados momentos.
 
