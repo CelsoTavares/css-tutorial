@@ -126,6 +126,82 @@ Por padrão, o valor desta propriedade é none, mas você pode definir da seguin
 ex: **flex: 2 3 100px**;
 ex: **flex: 1**;
 
+## Animações CSS
+### CSS permite a animação de elementos HTML sem usar JavaScript ou Flash!
+
+### A regra **@keyframes**
+Quando você especifica estilos CSS dentro da @keyframes regra, a animação mudará gradualmente do estilo atual para o novo estilo em determinados momentos.
+
+Para que uma animação funcione, você deve vincular a animação a um elemento.
+
+**@keyframes example** { <br>
+  from {background-color: red;} <br>
+  to {background-color: yellow;} <br>
+}
+
+@keyframes example { <br>
+  0%   {background-color: red;} <br>
+  25%  {background-color: yellow;} <br>
+  50%  {background-color: blue;} <br>
+  100% {background-color: green;} <br>
+}
+
+### animation-name
+A propriedade **animation-name** recebe o nome do animation, como no exemplo:
+
+**animation-name:** example;
+
+### animation-duration 
+A **animation-duration** propriedade define quanto tempo uma animação deve levar para ser concluída. Se a animation-durationpropriedade não for especificada, nenhuma animação ocorrerá, pois o valor padrão é 0s (0 segundos). <br>
+
+**animation-duration:** 4s; 
+
+### animation-delay
+A **animation-delay** propriedade especifica um atraso para o início de uma animação.
+O exemplo a seguir tem um atraso de 2 segundos antes de iniciar a animação:
+
+**animation-delay:** 2s;
+
+### animation-iteration-count
+A **animation-iteration-count** propriedade especifica o número de vezes que uma animação deve ser executada.
+O exemplo a seguir executará a animação 3 vezes e no outro infinitas vezes antes de parar:
+
+**animation-iteration-count:** 3; <br>
+**animation-iteration-count:** infinite;
+
+### animation-direction
+A propriedade **animation-direction** pode ter os seguintes valores:
+
+* **normal**- A animação é reproduzida normalmente (para a frente). Isso é padrão
+* **reverse**- A animação é reproduzida na direção inversa (para trás)
+* **alternate**- A animação é reproduzida primeiro para a frente e depois para trás
+* **alternate-reverse**- A animação é reproduzida primeiro para trás e depois para a frente
+
+### animation-timing-function
+A propriedade **animation-timing-function** pode ter os seguintes valores:
+
+* **ease**- Especifica uma animação com início lento, rápido e final lento (este é o padrão)
+* **linear**- Especifica uma animação com a mesma velocidade do início ao fim
+* **ease-in**- Especifica uma animação com um início lento
+* **ease-out**- Especifica uma animação com um final lento
+* **ease-in-out**- Especifica uma animação com início e fim lentos
+* **cubic-bezier(n,n,n,n)**- Permite definir seus próprios valores em uma função cúbica-bezier
+
+### animation-fill-mode
+A **animation-fill-mode** propriedade especifica um estilo para o elemento de destino quando a animação não está sendo reproduzida (antes de começar, depois de terminar ou ambos).
+
+A propriedade **animation-fill-mode** pode ter os seguintes valores:
+
+* **none**- Valor padrão. A animação não aplicará nenhum estilo ao elemento antes ou depois de ser executado
+* **forwards**- O elemento manterá os valores de estilo definidos pelo último quadro-chave (depende da direção da animação e da contagem de iteração da animação)
+* **backward**s- O elemento obterá os valores de estilo definidos pelo primeiro quadro-chave (depende da direção da animação) e reterá isso durante o período de atraso da animação
+* **both**- A animação seguirá as regras para frente e para trás, estendendo as propriedades da animação em ambas as direções
+
+**animation**
+O mesmo efeito de animação acima pode ser obtido usando a animation propriedade abreviada:
+
+**animation:** example 5s linear 2s infinite alternate;
+
 ### Seletor:
 * **:active** a:active Seleciona o link ativo
 * **::after** p::after Insere algo após o conteúdo de cada elemento 
